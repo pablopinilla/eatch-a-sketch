@@ -1,0 +1,15 @@
+.gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+}
+
+.square {
+    flex-basis: 6%;
+    border: solid black 0.1em;
+}
+
+.hovered {
+    background-color: aqua;
+}
