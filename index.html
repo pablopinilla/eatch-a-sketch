@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Eatch-A-Sketch</title>
+    <title>Etch-a-sketch</title>
 </head>
 <body>
-    <button class="newGrid">new grid</button>
-    <div class="gridWraper">
-        <div class="gridContainer"></div>
+    <h1>Etch-a-sketch</h1>
+    <div class="flexWrapper">
+        <div class="buttons">
+            <input type="color" class="picker">
+            <button class="button painter" onclick="paint()">paint</button>
+            <button class="button eraser" onclick="erase()">erase</button>
+            <button class="button rainbow" onclick="rainbow()">random</button>
+            <button class="button darken" onclick="darken()">darken</button>
+            <button class="button newGrid">new grid</button>
+        </div>
+
+            <div class="gridWraper">
+                <div class="gridContainer"></div>
+            </div>
+        <div></div>
     </div>
     <script src="app.js"></script>
 </body>
