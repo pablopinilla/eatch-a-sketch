@@ -1,12 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .gridContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    margin: 0;
+    width: 600px;
+    height: 600px;
 }
 
 .square {
-    flex-basis: 6%;
+    box-sizing: border-box;
     border: solid black 0.1em;
 }
 
